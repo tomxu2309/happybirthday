@@ -1,0 +1,75 @@
+body {
+    font-family: 'Sofadi One', system-ui;
+    background-color: #f0f8ff;
+    text-align: center;
+    padding-top: 100px;
+    background-image: url('223.jpg'); /* Đường dẫn đến ảnh nền */
+    background-size: cover; /* Đảm bảo ảnh nền phủ toàn bộ màn hình */
+    background-repeat: no-repeat; /* Không lặp lại ảnh nền */
+    background-position: center; /* Đặt ảnh nền ở giữa */
+}
+
+
+
+@keyframes starAnim {
+    0% {background-position: 0 0;}
+    100% {background-position: -10000px 5000px;}
+}
+
+@keyframes twinkling {
+    0% {opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {opacity: 0;}
+}
+
+
+h1 {
+    font-family: 'Sofadi One', system-ui  ;
+    font-size: 50px;
+    color: #ff69b4;
+    animation: neon 2s infinite alternate;
+}
+    @keyframes neon {
+        0% {
+            text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4;
+        }
+        100% {
+            text-shadow: 0 0 20px #ff1493, 0 0 30px #ff1493, 0 0 40px #ff1493;
+        }
+}
+
+p {
+    font-size: 24px;
+        color: #cc11c0cd;
+}
+button {
+    color: rgb(240, 116, 88); /* Màu trắng cho chữ trên nút */
+    background-color: #4ce1a8; /* Màu nền của nút */
+}
+
+.balloons {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: moveUp 10s infinite;
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateX(-50%) translateY(100%);
+    }
+    100% {
+        transform: translateX(-50%) translateY(-100%);
+    }
+}
+@keyframes moveMeteor {
+    from {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    to {
+        transform: translate(100px, 100px);
+        opacity: 0;
+    }
+}

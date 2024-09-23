@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>Chúc mừng sinh nhật!</title>
+    <!-- Link Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Chúc mừng sinh nhật!</h1>
+    <p>Chúc em có một ngày sinh nhật tuyệt vời!</p>
+    <p>Cảm ơn em vì đã đến bên anh và yêu anh!</p>
+    <p>Chúc em gặp em gặp nhiều may mắn và luôn luôn là cô gái đáng yêu của anh</p>
+
+    <div class="balloons">
+        🎈🎈🎈
+    </div>
+
+    <audio id="birthdayAudio" loop>
+        <source src="happy-birthday.mp3" type="audio/mpeg">
+        Trình duyệt của bạn không hỗ trợ audio.
+    </audio>
+    
+    <button onclick="document.getElementById('birthdayAudio').play();">Nhấn vào đi sợ hay sao mà không nhấn</button>
+    
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
